@@ -1,9 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
     <AssemblyName>libsample</AssemblyName>
     <PublishAot>true</PublishAot>
+    <SelfContained>true</SelfContained>
+
+    <!-- ✅ Target Android 64-bit -->
+    <RuntimeIdentifier>android-arm64</RuntimeIdentifier>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="8.0.*" />
+  </ItemGroup>
+
 </Project>
