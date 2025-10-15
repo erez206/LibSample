@@ -1,0 +1,9 @@
+V1.0 {
+    global: _init; _fini;
+        DotNetRuntimeDebugHeader;
+        add;
+        subtract;
+        multiply;
+        greet;
+    local: *;
+};
