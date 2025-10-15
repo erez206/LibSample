@@ -1,0 +1,12 @@
+/workspaces/LibSample/bin/release/net7.0/linux-x64/libsample.deps.json
+/workspaces/LibSample/bin/release/net7.0/linux-x64/libsample.dll
+/workspaces/LibSample/bin/release/net7.0/linux-x64/libsample.pdb
+/workspaces/LibSample/obj/release/net7.0/linux-x64/LibSample.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/LibSample/obj/release/net7.0/linux-x64/LibSample.AssemblyInfoInputs.cache
+/workspaces/LibSample/obj/release/net7.0/linux-x64/LibSample.AssemblyInfo.cs
+/workspaces/LibSample/obj/release/net7.0/linux-x64/LibSample.csproj.CoreCompileInputs.cache
+/workspaces/LibSample/obj/release/net7.0/linux-x64/LibSample.sourcelink.json
+/workspaces/LibSample/obj/release/net7.0/linux-x64/libsample.dll
+/workspaces/LibSample/obj/release/net7.0/linux-x64/refint/libsample.dll
+/workspaces/LibSample/obj/release/net7.0/linux-x64/libsample.pdb
+/workspaces/LibSample/obj/release/net7.0/linux-x64/ref/libsample.dll

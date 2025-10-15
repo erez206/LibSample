@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0/linux-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {},
+    ".NETCoreApp,Version=v7.0/linux-x64": {
+      "libsample/1.0.0": {
+        "dependencies": {
+          "Microsoft.DotNet.ILCompiler": "7.0.20",
+          "Microsoft.NET.ILLink.Analyzers": "7.0.100-1.23401.1",
+          "Microsoft.NET.ILLink.Tasks": "7.0.100-1.23401.1"
+        },
+        "runtime": {
+          "libsample.dll": {}
+        }
+      },
+      "Microsoft.DotNet.ILCompiler/7.0.20": {
+        "dependencies": {
+          "runtime.linux-x64.Microsoft.DotNet.ILCompiler": "7.0.20"
+        }
+      },
+      "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23401.1": {},
+      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23401.1": {},
+      "runtime.linux-x64.Microsoft.DotNet.ILCompiler/7.0.20": {}
+    }
+  },
+  "libraries": {
+    "libsample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.DotNet.ILCompiler/7.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9gGpu74pc/FBQuHqTb0pnvTftfSpQIkOfic7z9czAPTlCxEvY8rsEsYcfIX7ExvcIEr35Rf5cpxqCH09gApW3Q==",
+      "path": "microsoft.dotnet.ilcompiler/7.0.20",
+      "hashPath": "microsoft.dotnet.ilcompiler.7.0.20.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23401.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XirkjOLc5Vc3HsXRc2Z6ZbQv6l0RvWgJa/31w7XqZ914MoSi3H3OCNRMWFw7H2EYfsnKbokFfhCcysAmUcEOgw==",
+      "path": "microsoft.net.illink.analyzers/7.0.100-1.23401.1",
+      "hashPath": "microsoft.net.illink.analyzers.7.0.100-1.23401.1.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/7.0.100-1.23401.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mI6vCdPEhluLtMn/GV0texEWg5oAPQWCCE4LWspM+Bmy75Nd4EQsziQXrdOFqNeSBQMrxDX9C/O5Xi3kpKSMIw==",
+      "path": "microsoft.net.illink.tasks/7.0.100-1.23401.1",
+      "hashPath": "microsoft.net.illink.tasks.7.0.100-1.23401.1.nupkg.sha512"
+    },
+    "runtime.linux-x64.Microsoft.DotNet.ILCompiler/7.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mkGf75ZIIl2sr45lOO3yyvrPV8Uk9hRtGWDMRSl4pG9fbr4XaF7YNQvjT7+WKG26Xict3l43rs6RV6ZnuN84hA==",
+      "path": "runtime.linux-x64.microsoft.dotnet.ilcompiler/7.0.20",
+      "hashPath": "runtime.linux-x64.microsoft.dotnet.ilcompiler.7.0.20.nupkg.sha512"
+    }
+  }
+}

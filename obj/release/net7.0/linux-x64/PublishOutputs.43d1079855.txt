@@ -1,0 +1,2 @@
+/workspaces/LibSample/bin/release/net7.0/linux-x64/publish/libsample.so
+/workspaces/LibSample/bin/release/net7.0/linux-x64/publish/libsample.pdb

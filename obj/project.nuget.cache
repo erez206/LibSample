@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "I4XXbD0UF5M=",
+  "dgSpecHash": "c4pWoG6EJPQ=",
   "success": true,
-  "projectFilePath": "/Users/erezpickman/development/maui/LibSample/LibSample.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/workspaces/LibSample/LibSample.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.dotnet.ilcompiler/7.0.20/microsoft.dotnet.ilcompiler.7.0.20.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.net.illink.analyzers/7.0.100-1.23401.1/microsoft.net.illink.analyzers.7.0.100-1.23401.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.net.illink.tasks/7.0.100-1.23401.1/microsoft.net.illink.tasks.7.0.100-1.23401.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/runtime.linux-x64.microsoft.dotnet.ilcompiler/7.0.20/runtime.linux-x64.microsoft.dotnet.ilcompiler.7.0.20.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/home/codespace/.nuget/packages/runtime.linux-x64.microsoft.dotnet.ilcompiler/7.0.20/runtime.linux-x64.microsoft.dotnet.ilcompiler.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
