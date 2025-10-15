@@ -12,7 +12,7 @@
     <SelfContained>true</SelfContained>
 
     <!-- ✅ Target Android 64-bit -->
-    <RuntimeIdentifier>android-arm64</RuntimeIdentifier>
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
   </PropertyGroup>
 
   <ItemGroup>
