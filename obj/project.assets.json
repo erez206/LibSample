@@ -1,60 +1,76 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
-      "Microsoft.DotNet.ILCompiler/7.0.20": {
+    "net8.0": {
+      "Microsoft.DotNet.ILCompiler/8.0.21": {
         "type": "package",
         "build": {
-          "build/Microsoft.DotNet.ILCompiler.props": {},
-          "build/Microsoft.DotNet.ILCompiler.targets": {}
+          "build/Microsoft.DotNet.ILCompiler.props": {}
         }
       },
-      "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23401.1": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.NET.ILLink.Analyzers.props": {}
-        }
-      },
-      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23401.1": {
+      "Microsoft.NET.ILLink.Tasks/8.0.18": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       }
     },
-    "net7.0/linux-x64": {
-      "Microsoft.DotNet.ILCompiler/7.0.20": {
+    "net8.0/linux-x64": {
+      "Microsoft.DotNet.ILCompiler/8.0.21": {
         "type": "package",
         "dependencies": {
-          "runtime.linux-x64.Microsoft.DotNet.ILCompiler": "7.0.20"
+          "runtime.linux-x64.Microsoft.DotNet.ILCompiler": "8.0.21"
         },
         "build": {
-          "build/Microsoft.DotNet.ILCompiler.props": {},
-          "build/Microsoft.DotNet.ILCompiler.targets": {}
+          "build/Microsoft.DotNet.ILCompiler.props": {}
         }
       },
-      "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23401.1": {
-        "type": "package",
-        "build": {
-          "build/Microsoft.NET.ILLink.Analyzers.props": {}
-        }
-      },
-      "Microsoft.NET.ILLink.Tasks/7.0.100-1.23401.1": {
+      "Microsoft.NET.ILLink.Tasks/8.0.18": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-      "runtime.linux-x64.Microsoft.DotNet.ILCompiler/7.0.20": {
+      "runtime.linux-x64.Microsoft.DotNet.ILCompiler/8.0.21": {
         "type": "package"
       }
     }
   },
   "libraries": {
-    "Microsoft.DotNet.ILCompiler/7.0.20": {
-      "sha512": "9gGpu74pc/FBQuHqTb0pnvTftfSpQIkOfic7z9czAPTlCxEvY8rsEsYcfIX7ExvcIEr35Rf5cpxqCH09gApW3Q==",
+    "Microsoft.DotNet.ILCompiler/8.0.21": {
+      "sha512": "K7I0tRjOejpz3SfJMWsDFIev3shM1x7ZSmWq2xlQeWenJUr4Qz/vmppA2GOORQ3l+rovDBL/5AN0ZTMmmMoNXw==",
       "type": "package",
-      "path": "microsoft.dotnet.ilcompiler/7.0.20",
+      "path": "microsoft.dotnet.ilcompiler/8.0.21",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/BuildFrameworkNativeObjects.proj",
+        "build/Microsoft.DotNet.ILCompiler.SingleEntry.targets",
+        "build/Microsoft.DotNet.ILCompiler.props",
+        "build/Microsoft.NETCore.Native.Publish.targets",
+        "build/Microsoft.NETCore.Native.Unix.targets",
+        "build/Microsoft.NETCore.Native.Windows.targets",
+        "build/Microsoft.NETCore.Native.targets",
+        "build/NativeAOT.natstepfilter",
+        "build/NativeAOT.natvis",
+        "build/WindowsAPIs.txt",
+        "build/findvcvarsall.bat",
+        "microsoft.dotnet.ilcompiler.8.0.21.nupkg.sha512",
+        "microsoft.dotnet.ilcompiler.nuspec",
+        "runtime.json",
+        "tools/netstandard/ILCompiler.Build.Tasks.deps.json",
+        "tools/netstandard/ILCompiler.Build.Tasks.dll",
+        "tools/netstandard/ILCompiler.Build.Tasks.pdb"
+      ]
+    },
+    "Microsoft.NET.ILLink.Tasks/8.0.18": {
+      "sha512": "OiXqr2YIBEV9dsAWEtasK470ALyJ0VxJ9k4MotOxlWV6HeEgrJKYMW4HHj1OCCXvqE0/A25wEKPkpfiBARgDZA==",
+      "type": "package",
+      "path": "microsoft.net.illink.tasks/8.0.18",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -63,94 +79,64 @@
         "LICENSE.TXT",
         "Sdk/Sdk.props",
         "THIRD-PARTY-NOTICES.TXT",
-        "build/BuildFrameworkNativeObjects.proj",
-        "build/Microsoft.DotNet.ILCompiler.SingleEntry.targets",
-        "build/Microsoft.DotNet.ILCompiler.props",
-        "build/Microsoft.DotNet.ILCompiler.targets",
-        "build/Microsoft.NETCore.Native.Publish.targets",
-        "build/Microsoft.NETCore.Native.Unix.targets",
-        "build/Microsoft.NETCore.Native.Windows.targets",
-        "build/Microsoft.NETCore.Native.targets",
-        "build/NativeAOT.natvis",
-        "build/WindowsAPIs.txt",
-        "build/findvcvarsall.bat",
-        "microsoft.dotnet.ilcompiler.7.0.20.nupkg.sha512",
-        "microsoft.dotnet.ilcompiler.nuspec",
-        "runtime.json",
-        "tools/netstandard/ILCompiler.Build.Tasks.deps.json",
-        "tools/netstandard/ILCompiler.Build.Tasks.dll",
-        "tools/netstandard/ILCompiler.Build.Tasks.pdb",
-        "tools/netstandard/System.Collections.Immutable.dll",
-        "tools/netstandard/System.Reflection.Metadata.dll"
-      ]
-    },
-    "Microsoft.NET.ILLink.Analyzers/7.0.100-1.23401.1": {
-      "sha512": "XirkjOLc5Vc3HsXRc2Z6ZbQv6l0RvWgJa/31w7XqZ914MoSi3H3OCNRMWFw7H2EYfsnKbokFfhCcysAmUcEOgw==",
-      "type": "package",
-      "path": "microsoft.net.illink.analyzers/7.0.100-1.23401.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
         "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
         "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
         "build/Microsoft.NET.ILLink.Analyzers.props",
-        "microsoft.net.illink.analyzers.7.0.100-1.23401.1.nupkg.sha512",
-        "microsoft.net.illink.analyzers.nuspec"
-      ]
-    },
-    "Microsoft.NET.ILLink.Tasks/7.0.100-1.23401.1": {
-      "sha512": "mI6vCdPEhluLtMn/GV0texEWg5oAPQWCCE4LWspM+Bmy75Nd4EQsziQXrdOFqNeSBQMrxDX9C/O5Xi3kpKSMIw==",
-      "type": "package",
-      "path": "microsoft.net.illink.tasks/7.0.100-1.23401.1",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "Sdk/Sdk.props",
-        "build/6.0_suppressions.xml",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.7.0.100-1.23401.1.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.18.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/ILLink.Tasks.dll.config",
+        "tools/net472/Mono.Cecil.Mdb.dll",
+        "tools/net472/Mono.Cecil.Pdb.dll",
+        "tools/net472/Mono.Cecil.Rocks.dll",
         "tools/net472/Mono.Cecil.dll",
+        "tools/net472/Sdk/Sdk.props",
         "tools/net472/System.Buffers.dll",
         "tools/net472/System.Collections.Immutable.dll",
         "tools/net472/System.Memory.dll",
         "tools/net472/System.Numerics.Vectors.dll",
         "tools/net472/System.Reflection.Metadata.dll",
         "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/net7.0/ILLink.Tasks.deps.json",
-        "tools/net7.0/ILLink.Tasks.dll",
-        "tools/net7.0/Mono.Cecil.Pdb.dll",
-        "tools/net7.0/Mono.Cecil.dll",
-        "tools/net7.0/illink.deps.json",
-        "tools/net7.0/illink.dll",
-        "tools/net7.0/illink.runtimeconfig.json"
+        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net472/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/ILLink.Tasks.deps.json",
+        "tools/net8.0/ILLink.Tasks.dll",
+        "tools/net8.0/Mono.Cecil.Mdb.dll",
+        "tools/net8.0/Mono.Cecil.Pdb.dll",
+        "tools/net8.0/Mono.Cecil.Rocks.dll",
+        "tools/net8.0/Mono.Cecil.dll",
+        "tools/net8.0/Sdk/Sdk.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net8.0/build/Microsoft.NET.ILLink.targets",
+        "tools/net8.0/illink.deps.json",
+        "tools/net8.0/illink.dll",
+        "tools/net8.0/illink.runtimeconfig.json",
+        "useSharedDesignerContext.txt"
       ]
     },
-    "runtime.linux-x64.Microsoft.DotNet.ILCompiler/7.0.20": {
-      "sha512": "mkGf75ZIIl2sr45lOO3yyvrPV8Uk9hRtGWDMRSl4pG9fbr4XaF7YNQvjT7+WKG26Xict3l43rs6RV6ZnuN84hA==",
+    "runtime.linux-x64.Microsoft.DotNet.ILCompiler/8.0.21": {
+      "sha512": "oJcYirorRqvQHClQc6sg74di4fiFqGPDFuJWQhzbz9vrhfERE7AKy7ca33QBYBy15hJiGGT+JVeh3E0AUIR+zw==",
       "type": "package",
-      "path": "runtime.linux-x64.microsoft.dotnet.ilcompiler/7.0.20",
+      "path": "runtime.linux-x64.microsoft.dotnet.ilcompiler/8.0.21",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
-        "Sdk/Sdk.props",
         "THIRD-PARTY-NOTICES.TXT",
         "build/BuildFrameworkNativeObjects.proj",
         "build/Microsoft.DotNet.ILCompiler.SingleEntry.targets",
         "build/Microsoft.DotNet.ILCompiler.props",
-        "build/Microsoft.DotNet.ILCompiler.targets",
         "build/Microsoft.NETCore.Native.Publish.targets",
         "build/Microsoft.NETCore.Native.Unix.targets",
         "build/Microsoft.NETCore.Native.Windows.targets",
         "build/Microsoft.NETCore.Native.targets",
+        "build/NativeAOT.natstepfilter",
         "build/NativeAOT.natvis",
         "build/WindowsAPIs.txt",
         "build/findvcvarsall.bat",
@@ -504,11 +490,138 @@
         "framework/netstandard.dll",
         "framework/netstandard.pdb",
         "mibc/DotNet_Adhoc.mibc",
+        "mibc/DotNet_FSharp.mibc",
         "mibc/DotNet_FirstTimeXP.mibc",
         "mibc/DotNet_HelloWorld.mibc",
         "mibc/DotNet_OrchardCore.mibc",
         "mibc/DotNet_TechEmpower.mibc",
-        "runtime.linux-x64.microsoft.dotnet.ilcompiler.7.0.20.nupkg.sha512",
+        "native/src/libs/Common/delayloadhook_windows.cpp",
+        "native/src/libs/Common/pal_atomic.h",
+        "native/src/libs/Common/pal_compiler.h",
+        "native/src/libs/Common/pal_config.h.in",
+        "native/src/libs/Common/pal_error_common.h",
+        "native/src/libs/Common/pal_io_common.h",
+        "native/src/libs/Common/pal_networking_common.h",
+        "native/src/libs/Common/pal_safecrt.h",
+        "native/src/libs/Common/pal_ssl_types.h",
+        "native/src/libs/Common/pal_types.h",
+        "native/src/libs/Common/pal_utilities.h",
+        "native/src/libs/Common/pal_x509_types.h",
+        "native/src/libs/System.Globalization.Native/CMakeLists.txt",
+        "native/src/libs/System.Globalization.Native/config.h.in",
+        "native/src/libs/System.Globalization.Native/configure.cmake",
+        "native/src/libs/System.Globalization.Native/entrypoints.c",
+        "native/src/libs/System.Globalization.Native/pal_calendarData.c",
+        "native/src/libs/System.Globalization.Native/pal_calendarData.h",
+        "native/src/libs/System.Globalization.Native/pal_calendarData.m",
+        "native/src/libs/System.Globalization.Native/pal_casing.c",
+        "native/src/libs/System.Globalization.Native/pal_casing.h",
+        "native/src/libs/System.Globalization.Native/pal_casing.m",
+        "native/src/libs/System.Globalization.Native/pal_collation.c",
+        "native/src/libs/System.Globalization.Native/pal_collation.h",
+        "native/src/libs/System.Globalization.Native/pal_collation.m",
+        "native/src/libs/System.Globalization.Native/pal_errors.h",
+        "native/src/libs/System.Globalization.Native/pal_errors_internal.h",
+        "native/src/libs/System.Globalization.Native/pal_icushim.c",
+        "native/src/libs/System.Globalization.Native/pal_icushim.h",
+        "native/src/libs/System.Globalization.Native/pal_icushim_internal.h",
+        "native/src/libs/System.Globalization.Native/pal_icushim_internal_android.h",
+        "native/src/libs/System.Globalization.Native/pal_icushim_static.c",
+        "native/src/libs/System.Globalization.Native/pal_idna.c",
+        "native/src/libs/System.Globalization.Native/pal_idna.h",
+        "native/src/libs/System.Globalization.Native/pal_locale.c",
+        "native/src/libs/System.Globalization.Native/pal_locale.h",
+        "native/src/libs/System.Globalization.Native/pal_locale.m",
+        "native/src/libs/System.Globalization.Native/pal_localeNumberData.c",
+        "native/src/libs/System.Globalization.Native/pal_localeNumberData.h",
+        "native/src/libs/System.Globalization.Native/pal_localeStringData.c",
+        "native/src/libs/System.Globalization.Native/pal_localeStringData.h",
+        "native/src/libs/System.Globalization.Native/pal_locale_internal.h",
+        "native/src/libs/System.Globalization.Native/pal_normalization.c",
+        "native/src/libs/System.Globalization.Native/pal_normalization.h",
+        "native/src/libs/System.Globalization.Native/pal_timeZoneInfo.c",
+        "native/src/libs/System.Globalization.Native/pal_timeZoneInfo.h",
+        "native/src/libs/System.Security.Cryptography.Native/CMakeLists.txt",
+        "native/src/libs/System.Security.Cryptography.Native/apibridge.c",
+        "native/src/libs/System.Security.Cryptography.Native/apibridge.h",
+        "native/src/libs/System.Security.Cryptography.Native/apibridge_30.c",
+        "native/src/libs/System.Security.Cryptography.Native/apibridge_30.h",
+        "native/src/libs/System.Security.Cryptography.Native/apibridge_30_rev.h",
+        "native/src/libs/System.Security.Cryptography.Native/configure.cmake",
+        "native/src/libs/System.Security.Cryptography.Native/entrypoints.c",
+        "native/src/libs/System.Security.Cryptography.Native/extra_libs.cmake",
+        "native/src/libs/System.Security.Cryptography.Native/openssl.c",
+        "native/src/libs/System.Security.Cryptography.Native/openssl.h",
+        "native/src/libs/System.Security.Cryptography.Native/openssl_1_0_structs.h",
+        "native/src/libs/System.Security.Cryptography.Native/opensslshim.c",
+        "native/src/libs/System.Security.Cryptography.Native/opensslshim.h",
+        "native/src/libs/System.Security.Cryptography.Native/osslcompat_102.h",
+        "native/src/libs/System.Security.Cryptography.Native/osslcompat_111.h",
+        "native/src/libs/System.Security.Cryptography.Native/osslcompat_30.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_asn1.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_asn1.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_bignum.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_bignum.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_bio.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_bio.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_crypto_config.h.in",
+        "native/src/libs/System.Security.Cryptography.Native/pal_crypto_types.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_dsa.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_dsa.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_ecc_import_export.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_ecc_import_export.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_ecdsa.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_ecdsa.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_eckey.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_eckey.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_err.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_err.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_cipher.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_cipher.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey_dsa.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey_dsa.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey_ecdh.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey_ecdh.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey_eckey.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey_eckey.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey_rsa.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_evp_pkey_rsa.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_hmac.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_hmac.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_ocsp.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_ocsp.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_pkcs7.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_pkcs7.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_ssl.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_ssl.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_x509.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_x509.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_x509_name.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_x509_name.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_x509_root.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_x509_root.h",
+        "native/src/libs/System.Security.Cryptography.Native/pal_x509ext.c",
+        "native/src/libs/System.Security.Cryptography.Native/pal_x509ext.h",
+        "native/src/libs/build-local.sh",
+        "native/src/minipal/asansupport.cpp",
+        "native/src/minipal/configure.cmake",
+        "native/src/minipal/cpufeatures.c",
+        "native/src/minipal/cpufeatures.h",
+        "native/src/minipal/cpuid.h",
+        "native/src/minipal/entrypoints.h",
+        "native/src/minipal/getexepath.h",
+        "native/src/minipal/minipalconfig.h.in",
+        "native/src/minipal/random.c",
+        "native/src/minipal/random.h",
+        "native/src/minipal/types.h",
+        "native/src/minipal/utf8.c",
+        "native/src/minipal/utf8.h",
+        "native/src/minipal/utils.h",
+        "runtime.linux-x64.microsoft.dotnet.ilcompiler.8.0.21.nupkg.sha512",
         "runtime.linux-x64.microsoft.dotnet.ilcompiler.nuspec",
         "sdk/System.Private.CoreLib.dll",
         "sdk/System.Private.CoreLib.pdb",
@@ -527,15 +640,20 @@
         "sdk/System.Private.TypeLoader.xml",
         "sdk/libRuntime.ServerGC.a",
         "sdk/libRuntime.WorkstationGC.a",
-        "sdk/libbootstrapper.a",
-        "sdk/libbootstrapperdll.a",
+        "sdk/libbootstrapper.o",
+        "sdk/libbootstrapperdll.o",
+        "sdk/libeventpipe-disabled.a",
+        "sdk/libeventpipe-enabled.a",
+        "sdk/libstdc++compat.a",
         "tools/ILCompiler.Compiler.pdb",
         "tools/ILCompiler.DependencyAnalysisFramework.pdb",
         "tools/ILCompiler.MetadataTransform.pdb",
         "tools/ILCompiler.RyuJit.pdb",
         "tools/ILCompiler.TypeSystem.pdb",
         "tools/ilc",
-        "tools/ilc.pdb",
+        "tools/ilc.dbg",
+        "tools/libc++.so.1",
+        "tools/libc++abi.so.1",
         "tools/libclrjit_universal_arm64_x64.so",
         "tools/libclrjit_universal_arm_x64.so",
         "tools/libclrjit_unix_x64_x64.so",
@@ -545,17 +663,14 @@
         "tools/libobjwriter.so",
         "tools/netstandard/ILCompiler.Build.Tasks.deps.json",
         "tools/netstandard/ILCompiler.Build.Tasks.dll",
-        "tools/netstandard/ILCompiler.Build.Tasks.pdb",
-        "tools/netstandard/System.Collections.Immutable.dll",
-        "tools/netstandard/System.Reflection.Metadata.dll"
+        "tools/netstandard/ILCompiler.Build.Tasks.pdb"
       ]
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
-      "Microsoft.DotNet.ILCompiler >= 7.0.20",
-      "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23401.1",
-      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23401.1"
+    "net8.0": [
+      "Microsoft.DotNet.ILCompiler >= 8.0.*",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.18"
     ]
   },
   "packageFolders": {
@@ -574,14 +689,14 @@
         "/home/codespace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -597,25 +712,17 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Microsoft.DotNet.ILCompiler": {
-            "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.20, )",
-            "autoReferenced": true
-          },
-          "Microsoft.NET.ILLink.Analyzers": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[7.0.100-1.23401.1, )",
-            "autoReferenced": true
+            "version": "[8.0.*, )"
           },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[7.0.100-1.23401.1, )",
+            "version": "[8.0.18, )",
             "autoReferenced": true
           }
         },
@@ -632,16 +739,16 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
+            "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
+            "version": "[8.0.18, 8.0.18]"
           },
           {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.20, 7.0.20]"
+            "name": "Microsoft.NETCore.App.Runtime.linux-x64",
+            "version": "[8.0.18, 8.0.18]"
           },
           {
             "name": "runtime.linux-x64.Microsoft.DotNet.ILCompiler",
-            "version": "[7.0.20, 7.0.20]"
+            "version": "[8.0.18, 8.0.18]"
           }
         ],
         "frameworkReferences": {
@@ -649,7 +756,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

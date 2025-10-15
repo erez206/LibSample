@@ -13,12 +13,11 @@
     <SourceRoot Include="/home/codespace/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.net.illink.tasks/7.0.100-1.23401.1/build/Microsoft.NET.ILLink.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.illink.tasks/7.0.100-1.23401.1/build/Microsoft.NET.ILLink.Tasks.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.net.illink.analyzers/7.0.100-1.23401.1/build/Microsoft.NET.ILLink.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.illink.analyzers/7.0.100-1.23401.1/build/Microsoft.NET.ILLink.Analyzers.props')" />
-    <Import Project="$(NuGetPackageRoot)microsoft.dotnet.ilcompiler/7.0.20/build/Microsoft.DotNet.ILCompiler.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dotnet.ilcompiler/7.0.20/build/Microsoft.DotNet.ILCompiler.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.illink.tasks/8.0.18/build/Microsoft.NET.ILLink.Tasks.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.illink.tasks/8.0.18/build/Microsoft.NET.ILLink.Tasks.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.dotnet.ilcompiler/8.0.21/build/Microsoft.DotNet.ILCompiler.props" Condition="Exists('$(NuGetPackageRoot)microsoft.dotnet.ilcompiler/8.0.21/build/Microsoft.DotNet.ILCompiler.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_NET_ILLink_Tasks Condition=" '$(PkgMicrosoft_NET_ILLink_Tasks)' == '' ">/home/codespace/.nuget/packages/microsoft.net.illink.tasks/7.0.100-1.23401.1</PkgMicrosoft_NET_ILLink_Tasks>
-    <PkgMicrosoft_DotNet_ILCompiler Condition=" '$(PkgMicrosoft_DotNet_ILCompiler)' == '' ">/home/codespace/.nuget/packages/microsoft.dotnet.ilcompiler/7.0.20</PkgMicrosoft_DotNet_ILCompiler>
+    <PkgMicrosoft_NET_ILLink_Tasks Condition=" '$(PkgMicrosoft_NET_ILLink_Tasks)' == '' ">/home/codespace/.nuget/packages/microsoft.net.illink.tasks/8.0.18</PkgMicrosoft_NET_ILLink_Tasks>
+    <PkgMicrosoft_DotNet_ILCompiler Condition=" '$(PkgMicrosoft_DotNet_ILCompiler)' == '' ">/home/codespace/.nuget/packages/microsoft.dotnet.ilcompiler/8.0.21</PkgMicrosoft_DotNet_ILCompiler>
   </PropertyGroup>
 </Project>
